@@ -1,0 +1,7 @@
+.headline-wrapper {
+    margin: 16px auto;
+}
+
+.headline-wrapper.image {
+    max-width: 256px;
+}
