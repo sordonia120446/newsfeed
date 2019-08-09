@@ -16,14 +16,14 @@ export default class NewsFeed extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({ data: topHeadlines, loading: false });
+    setTimeout(() => {
+      this.setState({ data: topHeadlines, loading: false });
+    }, 2000);
   }
 
   render() {
     return (
       <div>
-        {/* This will eventually be another component */}
-        <Loading />
         {this.state.loading ? <Loading /> : <HeadlineList data={this.state.data} />}
       </div>
     )
