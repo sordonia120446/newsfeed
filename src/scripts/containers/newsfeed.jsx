@@ -25,8 +25,9 @@ export default class NewsFeed extends React.Component {
   }
 
   handleShowClick() {
-    this.setState({ showLoadingAnyway: true });
-    console.log('sup')
+    this.setState((prevstate) => {
+      return { showLoadingAnyway: !prevstate.showLoadingAnyway }
+    });
   }
 
   render() {
