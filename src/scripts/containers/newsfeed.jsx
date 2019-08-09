@@ -2,6 +2,9 @@ import React from 'react';
 
 import topHeadlines from "../data/top_headlines";
 
+import Loading from "../components/loading";
+import HeadlineList from "./headlineList";
+
 
 export default class NewsFeed extends React.Component {
   constructor() {
@@ -20,7 +23,8 @@ export default class NewsFeed extends React.Component {
     return (
       <div>
         {/* This will eventually be another component */}
-        <h1>hi</h1>
+        <Loading />
+        {this.state.loading ? <Loading /> : <HeadlineList data={this.state.data} />}
       </div>
     )
   }
