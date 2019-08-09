@@ -12,7 +12,10 @@ export default class NewsFeed extends React.Component {
     this.state = {
       loading: true,
       data: {},
+      showLoadingAnyway: false,
     }
+
+    this.handleShowClick = this.handleShowClick.bind(this);
   }
 
   componentDidMount() {
@@ -21,9 +24,16 @@ export default class NewsFeed extends React.Component {
     }, 2000);
   }
 
+  handleShowClick() {
+    this.setState({ showLoadingAnyway: true });
+    console.log('sup')
+  }
+
   render() {
     return (
       <div>
+        <button onClick={this.handleShowClick} className="button4 lavender">Show Loading Anyway</button>
+        {this.state.showLoadingAnyway && <Loading />}
         {this.state.loading ? <Loading /> : <HeadlineList data={this.state.data} />}
       </div>
     )
