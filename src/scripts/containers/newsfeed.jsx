@@ -35,7 +35,7 @@ export default class NewsFeed extends React.Component {
       <div>
         <button onClick={this.handleShowClick} className="button4 lavender">Show Loading Anyway</button>
         {this.state.showLoadingAnyway && <Loading />}
-        {this.state.loading ? <Loading /> : <HeadlineList data={this.state.data} />}
+        {this.state.loading ? <Loading /> : <HeadlineList {...this.state.data} />}
       </div>
     )
   }

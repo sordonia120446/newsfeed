@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './static/headline.css';
+import '../../static/headline.css';
 
 const Headline = props => {
   return (
