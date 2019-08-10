@@ -5,7 +5,7 @@ const Empty = () => {
     <div>
       <h2>Content unavailable</h2>
       <p>
-        Try <a href="www.google.com" target="_blank" rel="noopener noreferrer">Google</a> lol?
+        Try <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">Google</a> lol?
       </p>
     </div>
   )
