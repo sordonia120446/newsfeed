@@ -13,5 +13,6 @@
 }
 
 .headline-wrapper > hr {
-  margin: 32px 0;
+  margin: 32px auto;
+  width: 50%;
 }
