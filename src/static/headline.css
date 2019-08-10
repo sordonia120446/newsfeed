@@ -1,7 +1,17 @@
 .headline-wrapper {
-    margin: 16px auto;
+  margin: 16px auto;
 }
 
-.headline-wrapper.image {
-    max-width: 256px;
+.headline-wrapper.drop-shadow {
+  border-left: solid 70px transparent;
+  border-right: solid 70px transparent;
+  filter: drop-shadow(0 0 30px #333);
+}
+
+.headline-wrapper > .image {
+  max-width: 512px;
+}
+
+.headline-wrapper > hr {
+  margin: 32px 0;
 }
