@@ -8,7 +8,7 @@ export default class Header extends React.Component {
         <h3>
           Cuz why not <span role="img" aria-label="smiling face with sunglasses emoji">😎</span>
         </h3>
-        <br></br>
+        <br />
       </div>
     )
   }
