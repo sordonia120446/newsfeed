@@ -1,0 +1,18 @@
+.headline-wrapper {
+  margin: 16px auto;
+}
+
+.headline-wrapper.drop-shadow {
+  border-left: solid 70px transparent;
+  border-right: solid 70px transparent;
+  filter: drop-shadow(0 0 30px #333);
+}
+
+.headline-wrapper > a > .image {
+  max-width: 256px;
+}
+
+.headline-wrapper > hr {
+  margin: 32px auto;
+  width: 50%;
+}
