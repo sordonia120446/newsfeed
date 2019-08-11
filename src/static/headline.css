@@ -8,11 +8,15 @@
   filter: drop-shadow(0 0 30px #333);
 }
 
-.headline-wrapper > .image {
-  max-width: 512px;
+.headline-wrapper > a > .image {
+  max-width: 256px;
 }
 
 .headline-wrapper > hr {
   margin: 32px auto;
   width: 50%;
+}
+
+.headline-wrapper > .description {
+  margin-bottom: 16px;
 }
