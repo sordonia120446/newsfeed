@@ -3,6 +3,7 @@ import React from 'react';
 import Loading from "../components/loading";
 import HeadlineList from "./headlineList";
 import Error from "../components/error";
+import NewsContext from './newsContext';
 
 
 export default class NewsFeed extends React.Component {
@@ -54,7 +55,11 @@ export default class NewsFeed extends React.Component {
       <div>
         <button onClick={this.handleShowClick} className="button4 lavender">Show Loading Anyway</button>
         {this.state.showLoadingAnyway && <Loading />}
-        {this.state.loading ? <Loading /> : <HeadlineList {...this.state.data} />}
+        {
+          this.state.loading
+          ? <Loading />
+          : <NewsContext.Provider value={this.state}><HeadlineList /></NewsContext.Provider>
+        }
       </div>
     )
   }
