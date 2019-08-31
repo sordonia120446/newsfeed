@@ -10,13 +10,7 @@ const HeadlineList = () => {
     <NewsContext.Consumer>
       {({data}) => (
         data.articles.length > 0
-        ? data.articles.map((article, index) => {
-          return (
-            <div key={index}>
-              <Headline {...article} />
-            </div>
-          )
-        })
+        ? data.articles.map((article) => <Headline {...article} />)
         : <Empty />
       )}
     </NewsContext.Consumer>
