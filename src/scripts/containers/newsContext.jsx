@@ -1,7 +1,9 @@
 import React from 'react'
 
 const defaultState = {
-  data: {},
+  data: {
+    articles: [],
+  },
 };
 
 const NewsContext = React.createContext(defaultState);
