@@ -8,23 +8,17 @@ import NewsContext from '../containers/newsContext';
 const HeadlineList = () => {
   return (
     <NewsContext.Consumer>
-      {({data}) => {
-        return (
-          <div>
-          {
-            data.articles.length > 0
-            ? data.articles.map((article, index) => {
-              return (
-                <div key={index}>
-                  <Headline {...article} />
-                </div>
-              )
-            })
-            : <Empty />
-          }
-        </div>
-        )
-      }}
+      {({data}) => (
+        data.articles.length > 0
+        ? data.articles.map((article, index) => {
+          return (
+            <div key={index}>
+              <Headline {...article} />
+            </div>
+          )
+        })
+        : <Empty />
+      )}
     </NewsContext.Consumer>
   )
 }

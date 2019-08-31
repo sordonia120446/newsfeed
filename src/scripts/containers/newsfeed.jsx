@@ -52,15 +52,11 @@ export default class NewsFeed extends React.Component {
     }
 
     return (
-      <div>
+      <NewsContext.Provider value={this.state}>
         <button onClick={this.handleShowClick} className="button4 lavender">Show Loading Anyway</button>
         {this.state.showLoadingAnyway && <Loading />}
-        {
-          this.state.loading
-          ? <Loading />
-          : <NewsContext.Provider value={this.state}><HeadlineList /></NewsContext.Provider>
-        }
-      </div>
+        {this.state.loading ? <Loading /> : <HeadlineList />}
+      </NewsContext.Provider>
     )
   }
 }
