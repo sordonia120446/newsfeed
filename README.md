@@ -1,3 +1,15 @@
+# NewsFeed
+
+Grabs top headlines. Gotta stay informed 😎
+
+## NewsFeed API
+
+Great resource.  Check out [their docs](https://newsapi.org/docs).
+
+To run this app, you'll need an API key from their website. Set it in th environment to `REACT_APP_NEWS_API_KEY`.
+
+# Additional Notes from create-react-app
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
